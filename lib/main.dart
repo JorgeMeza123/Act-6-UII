@@ -1,42 +1,198 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    return const MaterialApp(
+      title: 'Refaccionaria',
+      home: MyHomePage(title: 'Refaccionaria'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
   final String title;
-  const MyHomePage({super.key, required this.title});  
+  const MyHomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
+      body: PageView(
+        children: [
+          //primera pagina
+          Stack(
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset(
+                  'assets/images/bobinas.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const Center(
+                child: SizedBox(
+                  width: 150,
+                  height: 200,
+                  child: Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        children: [
+                          Text(
+                            "Bobinas",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Divider(
+                            thickness: 2,
+                            height: 25,
+                          ),
+                          Icon(Icons.arrow_circle_right),
+                          Text('Bobinas'),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+          //Segunda pagina
+          Stack(
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset(
+                  'assets/images/bomba-gasolina.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const Center(
+                child: SizedBox(
+                  width: 150,
+                  height: 200,
+                  child: Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Bomba Gasolina',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Divider(
+                            thickness: 2,
+                            height: 25,
+                          ),
+                          Icon(Icons.drive_eta),
+                          Text(
+                            'Bomba Gasolina',
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          //Tercera pagina
+          Stack(
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset(
+                  'assets/images/escape.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const Center(
+                child: SizedBox(
+                  width: 150,
+                  height: 200,
+                  child: Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Escape',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Divider(
+                            thickness: 2,
+                            height: 25,
+                          ),
+                          Text(
+                            'Escape',
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+          //Cuarta pagina
+          Stack(
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset(
+                  'assets/images/filtro-aire.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const Center(
+                child: SizedBox(
+                  width: 150,
+                  height: 200,
+                  child: Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Filtro de aire',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Divider(
+                            thickness: 2,
+                            height: 25,
+                          ),
+                          Text(
+                            'Filtro de aire',
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+        ],
       ),
     );
   }
