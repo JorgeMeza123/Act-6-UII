@@ -20,15 +20,14 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Imagenes de ejecucion
 
-![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/3ae6d48e-6cfb-43a7-ad8e-6e9b3010dc6d)
+![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/bfaea12d-fae1-4c9c-b0c9-3587ce49805b)
 
+![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/e804dad5-826a-4f4c-bb42-beebbfeb8916)
 
-![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/26a5d004-3368-453a-a5f6-1c80c063d17d)
+![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/307bf656-7733-4a0f-9756-d32e07682ee0)
 
+![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/bc15caa7-30b5-4d51-ba9f-470758f8adc7)
 
-![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/f0da28a1-18e9-40bb-b356-c064ccb1e411)
-
-![image](https://github.com/JorgeMeza123/Act-6-UII/assets/143548420/bc7f99bd-c40e-4f93-a058-94a6af8a00c5)
 
 
 
